@@ -35,6 +35,12 @@ namespace CTB_AT_Equipment
 				cantReason = null
 			};
 
+			// Check if CTB equipment effects are enabled
+			if (!TechBackground_Settings.AffectEquipping)
+			{
+				return info;
+			}
+
 			// Check if we have custom rules for this item
 			if (!EquipmentRestrictions.itemList.ContainsKey(thingDef.defName))
 			{
