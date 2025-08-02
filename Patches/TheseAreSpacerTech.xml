@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- These are Spacer Tech Mod Compatibility -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>These are Spacer Tech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<!--====================== Research-Related Equipment ======================-->
+				<!-- Items affected by research projects that "These are Spacer Tech" changes to Spacer level -->
+				
+				<!-- Transport Pod related items (TransportPod research -> Spacer) -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>TornadoGenerator</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>OrbitalTargeterBombardment</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>OrbitalTargeterPowerBeam</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+
+				<!-- Advanced Fabrication related items (AdvancedFabrication research -> Spacer) -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Gun_ChargeRifle</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Gun_ChargeLance</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_PowerArmor</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_PowerArmorHelmet</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ShieldBelt</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+
+				<!-- Sniper Turret related items (SniperTurret research -> Spacer) -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Gun_SniperRifle</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+
+				<!-- Rocketswarm Launcher related items (RocketswarmLauncher research -> Spacer) -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Gun_TripleRocket</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Gun_DoomsdayRocket</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Royalty DLC items affected by "These are Spacer Tech" -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>These are Spacer Tech</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<success>Normal</success>
+				<operations>
+					<!-- Gunlink research -> Spacer -->
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_Gunlink</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+
+					<!-- Mech Cluster related items -->
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>OrbitalTargeterMechCluster</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+
+	<!-- Ideology DLC items affected by "These are Spacer Tech" -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>These are Spacer Tech</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<success>Normal</success>
+				<operations>
+					<!-- Biosculpting, Bioregeneration, NeuralSupercharger research -> Spacer -->
+					<!-- Note: These research projects affect buildings/furniture, not portable equipment -->
+					<!-- If there are any portable items from these research projects, they would go here -->
+				</operations>
+			</match>
+		</match>
+	</Operation>
+
+	<!-- Biotech DLC items affected by "These are Spacer Tech" -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>These are Spacer Tech</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<success>Normal</success>
+				<operations>
+					<!-- ToxifierGenerator research -> Spacer -->
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Gun_ToxbombLauncher</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Weapon_GrenadeTox</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_PackTox</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+
+					<!-- Mectech research projects -> Spacer -->
+					<!-- All mech-related equipment becomes Spacer tech -->
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_MechlordSuit</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_ArmorHelmetMechlordHelmet</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_AirwireHeadset</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_ArrayHeadset</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_IntegratorHeadset</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_ArmorHelmetMechCommander</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_PackControl</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+					<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+						<itemLevelRules>
+							<li>
+								<thingDef>Apparel_PackBandwidth</thingDef>
+								<techLevelNoResearch>Spacer</techLevelNoResearch>
+								<techLevelResearched>Spacer</techLevelResearched>
+							</li>
+						</itemLevelRules>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>

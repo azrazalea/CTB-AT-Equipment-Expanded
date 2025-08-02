@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Core/Base Game Equipment Rules -->
+	<!-- Tribal pawns can equip Neolithic and Medieval equipment + Archotech + Molotov + with research: grenades, 'gunsmithing' guns, Flak armor & gas mask
+		Industrial pawns can equip Industrial equipment - without research: 'Gas operation' and higher + with research: All equipment -->
+	
+	<!--====================== Weapons ======================-->
+	<!-- Medieval Weapons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Pila</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Bow_Recurve</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Bow_Great</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>MeleeWeapon_Ikwa</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>MeleeWeapon_Spear</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>MeleeWeapon_Mace</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>MeleeWeapon_Gladius</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>MeleeWeapon_LongSword</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>MeleeWeapon_BreachAxe</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Early Industrial Weapons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Weapon_GrenadeMolotov</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_Revolver</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_BoltActionRifle</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_PumpShotgun</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Weapon_GrenadeFrag</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Weapon_GrenadeEMP</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Industrial Weapons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_Autopistol</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_MachinePistol</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_IncendiaryLauncher</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_SmokeLauncher</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_EmpLauncher</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_TripleRocket</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_DoomsdayRocket</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Advanced Industrial Weapons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_ChainShotgun</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_HeavySMG</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_LMG</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_AssaultRifle</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_SniperRifle</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_Minigun</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Spacer Weapons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_ChargeRifle</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_ChargeLance</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--====================== Apparel ======================-->
+	<!-- Archotech -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_PsychicShockLance</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_PsychicInsanityLance</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Medieval Apparel -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_PlateArmor</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_SimpleHelmet</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Early Industrial Apparel -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_FlakVest</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_FlakPants</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_FlakJacket</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_AdvancedHelmet</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_SmokepopBelt</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Industrial Apparel -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>OrbitalTargeterBombardment</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>OrbitalTargeterPowerBeam</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>TornadoGenerator</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_FirefoampopPack</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Spacer Apparel -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_PowerArmor</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_ArmorRecon</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_ShieldBelt</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_PowerArmorHelmet</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Apparel_ArmorHelmetRecon</thingDef>
+						<techLevelNoResearch>Spacer</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

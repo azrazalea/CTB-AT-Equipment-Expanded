@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>CTB-AT Equipment Expanded</name>
+	<author>azrazalea (originally by Aos Si)</author>
+	<url>https://github.com/azrazalea/ctb-at-equipment-expanded</url>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>azrazalea.CtbAtEquipmentExpanded</packageId>
+	<description>Enhanced compatibility bridge between Colonist Tech Background and Arcane Technology with comprehensive mod support including Medieval Overhaul, Simple Sidearms, and These are Spacer Tech compatibility.
+
+Note: This mod replaces Arcane Technology's Simple Sidearms patch to provide enhanced tech background integration. Pawns with appropriate tech backgrounds can now use research-locked weapons as sidearms without requiring research.</description>
+	<modDependencies>
+		<li>
+			<packageId>aossi.techbackground</packageId>
+			<displayName>Colonist Tech Background</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1264778930</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>dame.arcanetechnology</packageId>
+			<displayName>Arcane Technology</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>dame.arcanetechnology</li>
+		<li>aossi.techbackground</li>
+		<li>PeteTimesSix.SimpleSidearms</li>
+	</loadAfter>
+</ModMetaData>

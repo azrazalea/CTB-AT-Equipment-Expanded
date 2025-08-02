@@ -1,0 +1,70 @@
+[h1]CTB-AT Equipment Expanded[/h1]
+
+[b]Enhanced compatibility bridge between Colonist Tech Background and Arcane Technology[/b]
+
+This mod ensures that pawns with different technological backgrounds can appropriately use equipment based on their knowledge level, creating a more immersive and balanced gameplay experience.
+
+[h1]Features[/h1]
+[list]
+[*] Allows tribal pawns to use medieval equipment without research
+[*] Enables industrial pawns to use modern weapons without researching them first
+[*] Full support for Medieval Overhaul (160+ items)
+[*] Simple Sidearms integration - replaces Arcane Technology's patch for enhanced tech background support
+[*] These are Spacer Tech compatibility - automatic tech level adjustments
+[*] Comprehensive equipment rules for vanilla and DLC items
+[*] Smart tech level matching based on pawn backgrounds
+[/list]
+
+[h1]How It Works[/h1]
+The mod bridges the gap between Colonist Tech Background (which gives pawns tech knowledge traits) and Arcane Technology (which locks equipment behind research). With this mod:
+
+[list]
+[*] [b]Tribal pawns[/b] can use simple medieval weapons and armor without research
+[*] [b]Medieval pawns[/b] can use all medieval equipment plus basic firearms with research
+[*] [b]Industrial pawns[/b] can use modern weapons without needing to research gunsmithing
+[*] [b]Spacer pawns[/b] have access to advanced technology without research requirements
+[/list]
+
+[h1]Mod Compatibility[/h1]
+[b]Required:[/b]
+[list]
+[*] Colonist Tech Background
+[*] Arcane Technology
+[/list]
+
+[b]Enhanced Support:[/b]
+[list]
+[*] Medieval Overhaul - Full equipment support
+[*] Simple Sidearms - Replaces Arcane Technology's patch to enable tech background-aware sidearm selection
+[*] These are Spacer Tech - Automatic compatibility with research tech level changes
+[*] All official DLCs (Royalty, Ideology, Biotech, Anomaly)
+[/list]
+
+[h1]Load Order[/h1]
+1. Core
+2. DLCs (if any)
+3. Arcane Technology
+4. Colonist Tech Background
+5. These are Spacer Tech (if using)
+6. Medieval Overhaul (if using)
+7. Simple Sidearms (if using)  
+8. [b]CTB-AT Equipment Expanded[/b]
+
+[h1]Credits[/h1]
+[list]
+[*] Original mod by [b]Aos Si[/b]
+[*] Expanded and maintained by [b]azrazalea[/b]
+[*] Medieval Overhaul compatibility added
+[*] Simple Sidearms integration implemented
+[/list]
+
+[h1]Technical Details[/h1]
+This mod uses Harmony patches to intercept equipment checks and apply custom tech level rules based on pawn backgrounds. It maintains compatibility with other mods by using a shared equipment checking system.
+
+[h1]Bug Reports & Suggestions[/h1]
+Please report any issues or suggestions in the comments section. When reporting bugs, please include:
+- Your mod list
+- The specific item causing issues
+- The pawn's tech background trait
+
+[url=https://github.com/azrazalea/ctb-at-equipment-expanded]Source Code Available on GitHub[/url]

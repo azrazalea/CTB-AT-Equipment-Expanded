@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Royalty DLC Equipment Rules -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<!--====================== Weapons ======================-->
+				<!-- Medieval Weapons -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_Axe</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_Warhammer</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_PsyfocusStaff</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				
+				<!-- Spacer Weapons -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_MonoSword</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_Zeushammer</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_PlasmaSword</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_ZeusHammerBladelink</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>MeleeWeapon_PlasmaSwordBladelink</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+
+				<!--====================== Apparel ======================-->
+				<!-- Medieval Apparel -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ShirtRuffle</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_Corset</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_VestRoyal</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_RobeRoyal</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_HatLadies</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_HatTop</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_Coronet</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_Crown</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_CrownStellic</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_Beret</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_PsyfocusHelmet</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_EltexSkullcap</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_PsyfocusShirt</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_PsyfocusVest</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_PsyfocusRobe</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+
+				<!-- Industrial Apparel -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>OrbitalTargeterMechCluster</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_PackJump</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+
+				<!-- Spacer Apparel -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorReconPrestige</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorHelmetReconPrestige</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorMarinePrestige</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorMarineHelmetPrestige</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorCataphract</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorHelmetCataphract</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorCataphractPrestige</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorHelmetCataphractPrestige</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorLocust</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorMarineGrenadier</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ArmorCataphractPhoenix</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_PackBroadshield</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+
+				<!-- Gunlink (default behavior without 'These are Spacer Tech') -->
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_Gunlink</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

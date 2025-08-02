@@ -1,0 +1,102 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CTB-AT-Equipment</AssemblyName>
+    <RootNamespace>CTB_AT_Equipment</RootNamespace>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    
+    <!-- Default to Release configuration -->
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    
+    <!-- Output to 1.6 folder -->
+    <OutputPath>../1.6/Assemblies/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    
+    <!-- Debug symbols -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- RimWorld installation path - UPDATE THIS to your RimWorld installation path -->
+    <RimWorldPath Condition="'$(RimWorldPath)' == ''">C:\Program Files (x86)\Steam\steamapps\common\RimWorld</RimWorldPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- RimWorld Core References -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldPath)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldPath)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+    <!-- Harmony via NuGet -->
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" ExcludeAssets="runtime" />
+    
+    <!-- Mod Dependencies -->
+    <Reference Include="TechBackground">
+      <HintPath>..\..\Colonist Tech Background\1.6\Assemblies\TechBackground.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Arcane_Technology">
+      <HintPath>..\..\Arcane Technology\1.6\Assemblies\Arcane Technology.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimpleSidearms">
+      <HintPath>..\..\SimpleSideArms\v1.6\Assemblies\SimpleSidearms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Post-build message -->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Message Text="CTB-AT Equipment Mod built successfully for RimWorld 1.6" Importance="high" />
+  </Target>
+
+  <!-- Post-build deployment to RimWorld Mods folder -->
+  <Target Name="DeployToRimWorld" AfterTargets="PostBuild">
+    <PropertyGroup>
+      <ModName>CTB-AT Equipment Mod</ModName>
+    </PropertyGroup>
+    
+    <Message Text="Deploying $(ModName) to RimWorld..." Importance="high" />
+    
+    <!-- Remove existing mod from RimWorld if it exists -->
+    <RemoveDir Directories="$(RimWorldPath)\Mods\$(ModName)" Condition="Exists('$(RimWorldPath)\Mods\$(ModName)')" />
+    
+    <!-- Define what to copy -->
+    <ItemGroup>
+      <!-- Source folder (excluding obj and bin) -->
+      <SourceFiles Include="$(MSBuildProjectDirectory)\**\*.*" 
+                   Exclude="$(MSBuildProjectDirectory)\obj\**\*.*;$(MSBuildProjectDirectory)\bin\**\*.*" />
+      
+      <!-- 1.6 folder -->
+      <OneSixFiles Include="$(MSBuildProjectDirectory)\..\1.6\**\*.*" />
+      
+      <!-- Patches folder -->
+      <PatchFiles Include="$(MSBuildProjectDirectory)\..\Patches\**\*.*" />
+      
+      <!-- About folder -->
+      <AboutFiles Include="$(MSBuildProjectDirectory)\..\About\**\*.*" />
+      
+      <!-- Root files -->
+      <RootFiles Include="$(MSBuildProjectDirectory)\..\README.md" />
+      <RootFiles Include="$(MSBuildProjectDirectory)\..\CTB-AT-Equipment.sln" />
+    </ItemGroup>
+    
+    <!-- Copy all defined files -->
+    <Copy SourceFiles="@(SourceFiles)" DestinationFiles="@(SourceFiles->'$(RimWorldPath)\Mods\$(ModName)\Source\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(OneSixFiles)" DestinationFiles="@(OneSixFiles->'$(RimWorldPath)\Mods\$(ModName)\1.6\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(PatchFiles)" DestinationFiles="@(PatchFiles->'$(RimWorldPath)\Mods\$(ModName)\Patches\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(AboutFiles)" DestinationFiles="@(AboutFiles->'$(RimWorldPath)\Mods\$(ModName)\About\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(RootFiles)" DestinationFiles="@(RootFiles->'$(RimWorldPath)\Mods\$(ModName)\%(Filename)%(Extension)')" />
+    
+    <Message Text="$(ModName) deployed successfully to $(RimWorldPath)\Mods\$(ModName)" Importance="high" />
+  </Target>
+</Project>
