@@ -9,7 +9,7 @@
 	<packageId>azrazalea.CtbAtEquipmentExpanded</packageId>
 	<description>Enhanced compatibility bridge between Colonist Tech Background and Arcane Technology with comprehensive mod support including Medieval Overhaul, Simple Sidearms, and These are Spacer Tech compatibility.
 
-Note: This mod replaces Arcane Technology's Simple Sidearms patch to provide enhanced tech background integration. Pawns with appropriate tech backgrounds can now use research-locked weapons as sidearms without requiring research.</description>
+		Note: This mod replaces Arcane Technology's Simple Sidearms patch to provide enhanced tech background integration. Pawns with appropriate tech backgrounds can now use research-locked weapons as sidearms without requiring research.</description>
 	<modDependencies>
 		<li>
 			<packageId>aossi.techbackground</packageId>
@@ -31,5 +31,6 @@ Note: This mod replaces Arcane Technology's Simple Sidearms patch to provide enh
 		<li>dame.arcanetechnology</li>
 		<li>aossi.techbackground</li>
 		<li>PeteTimesSix.SimpleSidearms</li>
+		<li>dankpyon.medieval.overhaul</li>
 	</loadAfter>
 </ModMetaData>
