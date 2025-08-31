@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Vanilla Factions Expanded - Classical Compatibility Rules -->
+	<!-- Classical/Roman weapons and armor -->
+	<!-- Melee weapons and shields: Neolithic (intuitive to use) -->
+	<!-- Armor: Medieval (requires training/knowledge of straps) -->
+	<!-- Siege weapons: Medieval/Industrial (complex mechanisms) -->
+	
+	<!--====================== MELEE WEAPONS ======================-->
+	
+	<!-- Classical Melee Weapons - All usable by Neolithic (simple weapons) -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEC_MeleeWeapon_Dagger</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEC_MeleeWeapon_Spatha</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== RANGED WEAPONS ======================-->
+	
+	<!-- Classical Ranged Weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEC_Javelin</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEC_Weapon_Scorpion</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== APPAREL ======================-->
+	
+	<!-- Classical Clothing -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEC_Toga</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Legionnaire Armor - Military grade -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEC_Apparel_LegionnaireArmor</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEC_Apparel_LegionnaireHelmet</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Centurion Armor - Advanced military grade -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEC_Apparel_CenturionArmor</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEC_Apparel_CenturionHelmet</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Classical Headgear -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEC_Wreath</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Classical Shields - Usable by Neolithic (intuitive) -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEC_Shield_Heavy</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

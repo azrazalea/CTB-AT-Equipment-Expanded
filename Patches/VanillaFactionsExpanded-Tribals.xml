@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Vanilla Factions Expanded - Tribals Compatibility Rules -->
+	<!-- Tribal weapons and armor designed for neolithic tech level pawns -->
+	
+	<!--====================== WEAPONS ======================-->
+	
+	<!-- Ranged Neolithic Weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Tribals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFET_Throwspikes</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Melee Neolithic Weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Tribals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFET_Chunk</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFET_Stake</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== APPAREL ======================-->
+	
+	<!-- Light Tribalwear - Basic neolithic clothing -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Tribals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFET_Apparel_TribalLight</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Heavy Tribalwear - Full body neolithic clothing -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Tribals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFET_Apparel_TribalHeavy</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- War Tribalwear - Neolithic armor made from wood -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Tribals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFET_Apparel_TribalWar</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

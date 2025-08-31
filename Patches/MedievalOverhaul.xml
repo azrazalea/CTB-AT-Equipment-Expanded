@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<!-- Medieval Overhaul Compatibility Rules -->
-	<!-- Basic medieval weapons can be used by tribal pawns without research -->
-	<!-- Advanced medieval weapons require medieval knowledge or research for tribal use -->
-	<!-- Early firearms require industrial knowledge or medieval research -->
+	<!-- Melee weapons: Neolithic (intuitive to use) -->
+	<!-- Armor: Medieval (requires training/knowledge of straps) -->
+	<!-- Crossbows/Firearms: Medieval (complex mechanisms) -->
 	
 	<!--====================== MELEE WEAPONS ======================-->
 	
-	<!-- Basic Axes - Simple tools and weapons -->
+	<!-- All Axes - Usable by Neolithic (intuitive) -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Medieval Overhaul</li>
@@ -38,7 +38,7 @@
 		</match>
 	</Operation>
 	
-	<!-- Military Axes - Require some knowledge -->
+	<!-- Military Axes - Still usable by Neolithic -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Medieval Overhaul</li>
@@ -50,17 +50,17 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Handaxe</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Bardiche</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Longaxe</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -69,7 +69,7 @@
 		</match>
 	</Operation>
 	
-	<!-- Advanced Axes - High skill requirement -->
+	<!-- Advanced Axes - Still usable by Neolithic -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Medieval Overhaul</li>
@@ -81,13 +81,13 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_FightingAxe</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Greataxe</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -128,12 +128,12 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_ArmingSword</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Longsword</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -154,18 +154,18 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_FencingSword</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_NobleSword</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Greatsword</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -216,17 +216,17 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_MilitaryPick</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_TwoHandedHammer</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Polehammer</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -247,8 +247,8 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Warhammer</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -299,17 +299,17 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_NomadMace</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_MorningStar</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_WingedMace</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -330,8 +330,8 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_TwoHandedFlangedMace</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -387,32 +387,32 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_BoarSpear</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Spetum</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Billhook</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Pike</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Swordlance</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_Halberd</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -433,8 +433,8 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_FightingSpear</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -454,23 +454,23 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_PikeAmboise</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_PikeSoren</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_PikeOswin</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_MeleeWeapon_PikeHesse</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -553,13 +553,13 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_Crossbow</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_CrossbowHeavy</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -605,7 +605,7 @@
 						</li>
 						<li>
 							<thingDef>Bow_War</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -626,23 +626,23 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_Weapon_PotFire</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Weapon_PotFlash</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Weapon_PotFlashSmoke</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Weapon_AcidFlask</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -664,13 +664,13 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_Apparel_Hauberk</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_Heavy_Hauberk</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -690,23 +690,23 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_Apparel_Heraldic_Hauberk1c</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_Heraldic_Hauberk2c</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_Heraldic_Hauberk3c</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_Heraldic_Hauberk4c</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -762,12 +762,12 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_Apparel_Padded_Leather</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_Light_Lamellar</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -788,23 +788,23 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_Apparel_Brigandine</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_Breast_Plate</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_Zweihanders_Cuirass</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_Zweihanders_CuirassFloof</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -865,13 +865,13 @@
 						</li>
 						<li>
 							<thingDef>DankPyon_Footwear_BootsSplinted</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Footwear_BootsPlate</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -896,13 +896,13 @@
 						</li>
 						<li>
 							<thingDef>DankPyon_Handwear_GlovesSplinted</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Handwear_GlovesPlate</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -937,18 +937,18 @@
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_ChaussesPadded</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_ChaussesSplinted</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_ChaussesPlate</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -998,7 +998,7 @@
 						</li>
 						<li>
 							<thingDef>DankPyon_Headgear_ZweihandersHat</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -1019,17 +1019,17 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_Headgear_PaddedNasalHelmet</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Headgear_PaddedKettleHelmet</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Headgear_PaddedFlatTopHelmet</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -1055,23 +1055,23 @@
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_FlashPotBelt</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_FirePotBelt</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_SmokePotBelt</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Apparel_AcidFlaskBelt</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>
@@ -1091,23 +1091,23 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_Necklace_Citrine</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Necklace_Jade</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Necklace_Amber</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Necklace_Onyx</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Necklace_Emerald</thingDef>
@@ -1126,23 +1126,23 @@
 						</li>
 						<li>
 							<thingDef>DankPyon_Ring_Citrine</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Ring_Jade</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Ring_Amber</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Ring_Onyx</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_Ring_Emerald</thingDef>
@@ -1182,12 +1182,12 @@
 						</li>
 						<li>
 							<thingDef>DankPyon_ShieldKite</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_ShieldHeater</thingDef>
-							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
 							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
@@ -1208,23 +1208,23 @@
 					<itemLevelRules>
 						<li>
 							<thingDef>DankPyon_ShieldHeater_Amboise</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_ShieldHeater_Soren</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_ShieldHeater_Oswin</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 						<li>
 							<thingDef>DankPyon_ShieldHeater_Hesse</thingDef>
-							<techLevelNoResearch>Industrial</techLevelNoResearch>
-							<techLevelResearched>Medieval</techLevelResearched>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
 						</li>
 					</itemLevelRules>
 				</li>

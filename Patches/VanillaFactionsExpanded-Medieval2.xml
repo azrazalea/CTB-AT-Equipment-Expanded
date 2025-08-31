@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Vanilla Factions Expanded - Medieval 2 Compatibility Rules -->
+	<!-- Melee weapons: Neolithic (intuitive to use) -->
+	<!-- Armor: Medieval (requires training/knowledge) -->
+	<!-- Crossbows/Firearms: Medieval (complex mechanisms) -->
+	
+	<!--====================== MELEE WEAPONS ======================-->
+	
+	<!-- Medieval Melee Weapons - All usable by Neolithic (intuitive) -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_MeleeWeapon_HeavyMace</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_MeleeWeapon_Shortsword</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_MeleeWeapon_Flail</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Advanced Medieval Melee Weapons - Still usable by Neolithic -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_MeleeWeapon_DaneAxe</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_MeleeWeapon_Claymore</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_MeleeWeapon_Halberd</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_MeleeWeapon_Pike</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_MeleeWeapon_Standard</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== RANGED WEAPONS ======================-->
+	
+	<!-- Medieval Ranged Weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_ThrowingAxe</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Arbalest</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Warbow</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Early Gunpowder Weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_Gun_Arquebus</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Gun_HandCannon</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== APPAREL ======================-->
+	
+	<!-- Heavy Plate Armor -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_Apparel_PlateArmorHeavy</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Viking Armor -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_Apparel_HeavyLeatherArmor</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_LeatherArmor</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Basic Medieval Clothing -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_Apparel_PaddedArmor</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_Mantle</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_Tabard</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Noble/Special Clothing -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_Apparel_JesterOutfit</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_DameDress</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_KingsRobes</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== HEADGEAR ======================-->
+	
+	<!-- Heavy Helmets -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_Apparel_PlateHelmetHeavy</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_HeavyLeatherHelmet</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Basic Helmets -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_Apparel_LeatherHelmet</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_PaddedHelmet</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Noble/Special Headgear -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEM2_Apparel_JesterHat</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_DameHat</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_KingsCrown</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_PlagueMask</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_Chaperon</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEM2_Apparel_Cap</thingDef>
+							<techLevelNoResearch>Medieval</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

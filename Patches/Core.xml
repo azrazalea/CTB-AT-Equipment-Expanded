@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<!-- Core/Base Game Equipment Rules -->
-	<!-- Tribal pawns can equip Neolithic and Medieval equipment + Archotech + Molotov + with research: grenades, 'gunsmithing' guns, Flak armor & gas mask
-		Industrial pawns can equip Industrial equipment - without research: 'Gas operation' and higher + with research: All equipment -->
+	<!-- Melee weapons: Neolithic (intuitive to use) -->
+	<!-- Armor: Medieval (requires training/knowledge) -->
+	<!-- Basic firearms: Medieval (simple mechanisms) -->
+	<!-- Modern firearms: Industrial (complex mechanisms) -->
 	
 	<!--====================== Weapons ======================-->
 	<!-- Medieval Weapons -->
@@ -111,7 +113,7 @@
 					<li>
 						<thingDef>Gun_Revolver</thingDef>
 						<techLevelNoResearch>Industrial</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>
@@ -120,7 +122,7 @@
 					<li>
 						<thingDef>Gun_BoltActionRifle</thingDef>
 						<techLevelNoResearch>Industrial</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>
@@ -129,7 +131,7 @@
 					<li>
 						<thingDef>Gun_PumpShotgun</thingDef>
 						<techLevelNoResearch>Industrial</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>
@@ -344,8 +346,8 @@
 				<itemLevelRules>
 					<li>
 						<thingDef>Apparel_PlateArmor</thingDef>
-						<techLevelNoResearch>Neolithic</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelNoResearch>Medieval</techLevelNoResearch>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>
@@ -353,8 +355,8 @@
 				<itemLevelRules>
 					<li>
 						<thingDef>Apparel_SimpleHelmet</thingDef>
-						<techLevelNoResearch>Neolithic</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelNoResearch>Medieval</techLevelNoResearch>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>
@@ -370,7 +372,7 @@
 					<li>
 						<thingDef>Apparel_FlakVest</thingDef>
 						<techLevelNoResearch>Industrial</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>
@@ -379,7 +381,7 @@
 					<li>
 						<thingDef>Apparel_FlakPants</thingDef>
 						<techLevelNoResearch>Industrial</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>
@@ -388,7 +390,7 @@
 					<li>
 						<thingDef>Apparel_FlakJacket</thingDef>
 						<techLevelNoResearch>Industrial</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>
@@ -397,7 +399,7 @@
 					<li>
 						<thingDef>Apparel_AdvancedHelmet</thingDef>
 						<techLevelNoResearch>Industrial</techLevelNoResearch>
-						<techLevelResearched>Neolithic</techLevelResearched>
+						<techLevelResearched>Medieval</techLevelResearched>
 					</li>
 				</itemLevelRules>
 			</li>

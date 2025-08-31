@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Vanilla Factions Expanded - Pirates Compatibility Rules -->
+	<!-- Warcasket technology - Industrial/Spacer powered armor suits and their weapons -->
+	<!-- Most equipment requires high tech knowledge due to complex powered systems -->
+	
+	<!--====================== WARCASKET WEAPONS ======================-->
+	
+	<!-- Basic Warcasket Ranged Weapons - Industrial tier heavy weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketGun_Autorifle</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketGun_Slugthrower</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketGun_HandheldCannon</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Advanced Warcasket Ranged Weapons - High-tech precision weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketGun_UraniumSlugRifle</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketGun_Minigun</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketGun_GrenadeLauncher</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketGun_HeavyFlamer</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Spacer Tech Warcasket Weapons - Energy weapons and ultra-advanced systems -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketGun_ChargeLance</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketGun_ChargeBlaster</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- VWEL Compatibility Weapons - Laser technology -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketGun_SalvagedLaserEradicator</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketGun_LaserBlaster</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- VWEC Compatibility Weapons - Coilgun technology -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketGun_Railgun</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Warcasket Melee Weapons - Powered melee weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketMeleeWeapon_CombatKnife</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketMeleeWeapon_Broadsword</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketMeleeWeapon_GravityHammer</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketMeleeWeapon_PlasmaSword</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Mechanoid Weapons - Drone-mounted weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEPGun_MiniBlaster</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== WARCASKET APPAREL ======================-->
+	
+	<!-- Basic Warcasket Helmets - Industrial tier power armor helmets -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Warcasket</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Marine</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Recon</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Cataphract</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Specialized Warcasket Helmets - Advanced variants -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Aerial</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Barrage</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Hazard</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Shock</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Spacer Tech Warcasket Helmets - Ultra-advanced helmets -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Siegebreaker</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Guardian</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Controller</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Sarcophagus</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_WarcasketHelmet_Brute</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Warcasket Body Armor - Powered armor suits -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>VFEP_Warcasket_Bodysuit</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Medieval</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>VFEP_Warcasket_Warcasket</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

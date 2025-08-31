@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Alpha Mechs Compatibility Rules -->
+	<!-- Advanced mechanoid technology requiring Spacer knowledge or extensive research -->
+	<!-- Most items are high-tech weapons and mechanitor equipment -->
+	
+	<!--====================== MECHANITOR HELMETS ======================-->
+	
+	<!-- Advanced Mechanitor Helmets - High-tech command equipment -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mechs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>AM_MechCommanderHelm</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_MechBreakerHelm</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== MECHANITOR ARMOR ======================-->
+	
+	<!-- Advanced Mechanitor Armor - Power armor with mechanitor enhancements -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mechs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>AM_MechCommanderSuit</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_MechBreakerArmor</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== MECHANITOR UTILITY PACKS ======================-->
+	
+	<!-- High-tech Mechanitor Support Equipment -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mechs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>AM_BeamcasterPack</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_VoidlinkPack</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_CryptoPack</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== MECHANOID SHIELDS ======================-->
+	
+	<!-- Advanced Shielding Technology -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mechs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>AM_Apparel_ExpandedHeavyShield</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--====================== ENERGY WEAPONS ======================-->
+	
+	<!-- Advanced Energy Weapons - Laser and plasma technology -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mechs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>AM_Gun_HeavyLaser</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_BeamGraserCannon</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_TeslaGun</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_Gun_SuperHeavyChargeBlaster</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_Gun_GoliathChargeBlaster</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== BALLISTIC/KINETIC WEAPONS ======================-->
+	
+	<!-- Advanced Ballistic Weapons - Coil guns and needle weapons -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mechs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>AM_Gun_CoilLance</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_Gun_GoliathNeedle</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_MechanoidGunRotaryNeedle</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_Gun_MiniNeedle</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_Gun_TacticalShotgun</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== CHEMICAL/ELEMENTAL WEAPONS ======================-->
+	
+	<!-- Chemical and Elemental Warfare -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mechs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>AM_Flamethrower</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_CryogenicGun</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_Gun_AcidSpewer</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_SiegemelterTurret</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== SIEGE/ARTILLERY WEAPONS ======================-->
+	
+	<!-- Heavy Artillery and Siege Equipment -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Mechs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>AM_SiegebreakerTurret</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_DemolisherChargeBase</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_MechanoidMortar</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_Gun_HellsphereOrbital</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>AM_StarfireTurret</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Combat Shields Compatibility Rules -->
+	<!-- Traditional shields: Neolithic (intuitive to use - just hold up to block) -->
+	<!-- Modern shields with components/sensors: Industrial (complex mechanisms) -->
+	<!-- Spacer shields: Spacer (advanced technology) -->
+	
+	<!--====================== TRADITIONAL SHIELDS ======================-->
+	
+	<!-- Basic Traditional Shields - Wood, leather, simple metal -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Shields</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_NguniShield</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>Apparel_WickerShield</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Classical Era Shields -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Shields</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_Aspis</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>Apparel_Scutum</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Medieval Era Shields -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Shields</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_NordShield</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>Apparel_KiteShield</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>Apparel_CrusaderShield</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>Apparel_Pavise</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>Apparel_BucklerShield</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== MODERN SHIELDS ======================-->
+	
+	<!-- Basic Modern Shield - Simple metal, no components -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Shields</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_RiotShield</thingDef>
+							<techLevelNoResearch>Neolithic</techLevelNoResearch>
+							<techLevelResearched>Neolithic</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Advanced Modern Shields - Components, sensors, ballistic materials -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Shields</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_AssaultShield</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>Apparel_TacShield</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+						<li>
+							<thingDef>Apparel_BallisticShield</thingDef>
+							<techLevelNoResearch>Industrial</techLevelNoResearch>
+							<techLevelResearched>Industrial</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!--====================== SPACER SHIELDS ======================-->
+	
+	<!-- Ultra-Advanced Shield Technology -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Shields</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+					<itemLevelRules>
+						<li>
+							<thingDef>Apparel_ImperialShield</thingDef>
+							<techLevelNoResearch>Spacer</techLevelNoResearch>
+							<techLevelResearched>Spacer</techLevelResearched>
+						</li>
+					</itemLevelRules>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
