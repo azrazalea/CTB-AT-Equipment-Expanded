@@ -7,6 +7,47 @@
 	<!-- Modern firearms: Industrial (complex mechanisms) -->
 	
 	<!--====================== Weapons ======================-->
+	<!-- Neolithic Melee Weapons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>MeleeWeapon_Club</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>MeleeWeapon_Knife</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Neolithic Ranged Weapons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Bow_Short</thingDef>
+						<techLevelNoResearch>Neolithic</techLevelNoResearch>
+						<techLevelResearched>Neolithic</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+		</operations>
+	</Operation>
+	
 	<!-- Medieval Weapons -->
 	<Operation Class="PatchOperationSequence">
 		<success>Normal</success>
@@ -218,6 +259,15 @@
 				<itemLevelRules>
 					<li>
 						<thingDef>Gun_DoomsdayRocket</thingDef>
+						<techLevelNoResearch>Industrial</techLevelNoResearch>
+						<techLevelResearched>Industrial</techLevelResearched>
+					</li>
+				</itemLevelRules>
+			</li>
+			<li Class="CTB_AT_Equipment.EquipmentRestrictionsPatcher">
+				<itemLevelRules>
+					<li>
+						<thingDef>Gun_ThumpCannon</thingDef>
 						<techLevelNoResearch>Industrial</techLevelNoResearch>
 						<techLevelResearched>Industrial</techLevelResearched>
 					</li>
