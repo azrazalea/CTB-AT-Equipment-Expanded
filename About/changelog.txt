@@ -1,0 +1,49 @@
+[h1]Changelog[/h1]
+
+[h2]Version 2.0.0 - Major Update (December 2024)[/h2]
+
+[b]New Features:[/b]
+[list]
+[*] Added comprehensive mod compatibility patches for:
+  - Vanilla Factions Expanded - Classical
+  - Vanilla Factions Expanded - Medieval II  
+  - Vanilla Factions Expanded - Tribals
+  - Vanilla Factions Expanded - Pirates
+  - Combat Shields
+  - Alpha Mechs
+[*] Complete overhaul of tech level requirements for more realistic gameplay
+[/list]
+
+[b]Balance Changes:[/b]
+[list]
+[*] [b]Melee weapons and shields[/b] - Now usable by Neolithic pawns (intuitive to use)
+[*] [b]All armor types[/b] - Now require Medieval knowledge (straps and fitting knowledge needed)
+[*] [b]Modern firearms[/b] - Require Industrial knowledge (complex mechanisms)
+[*] [b]Early gunpowder weapons[/b] - Usable by Medieval pawns
+[*] Updated Medieval Overhaul patch - all melee weapons properly usable by tribals
+[*] Fixed crossbows to properly require Medieval knowledge (mechanical complexity)
+[/list]
+
+[b]Bug Fixes:[/b]
+[list]
+[*] Fixed plate armor incorrectly being usable by Neolithic pawns
+[*] Fixed modern weapons (revolvers, rifles, shotguns) being too accessible
+[*] Corrected flak armor requirements to Industrial level
+[/list]
+
+[b]Technical:[/b]
+[list]
+[*] Updated for RimWorld 1.6 compatibility
+[*] Improved patch organization and documentation
+[*] Added detailed comments explaining tech level philosophy
+[/list]
+
+[hr][/hr]
+
+[h2]Version 1.0.0 - Initial Release[/h2]
+[list]
+[*] Basic compatibility between Colonist Tech Background and Arcane Technology
+[*] Medieval Overhaul support
+[*] Simple Sidearms integration
+[*] Core game equipment patches
+[/list]

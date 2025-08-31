@@ -7,9 +7,27 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<packageId>azrazalea.CtbAtEquipmentExpanded</packageId>
-	<description>Enhanced compatibility bridge between Colonist Tech Background and Arcane Technology with comprehensive mod support including Medieval Overhaul, Simple Sidearms, and These are Spacer Tech compatibility.
+	<description>Enhanced compatibility bridge between Colonist Tech Background and Arcane Technology with comprehensive mod support.
 
-		Note: This mod replaces Arcane Technology's Simple Sidearms patch to provide enhanced tech background integration. Pawns with appropriate tech backgrounds can now use research-locked weapons as sidearms without requiring research.</description>
+Features:
+• Realistic tech level requirements - if a tribal can figure out how to use it, they can use it!
+• Extensive mod compatibility - supports VFE series, Medieval Overhaul, Combat Shields, Alpha Mechs, and more
+• Simple Sidearms integration - tech-appropriate pawns can use research-locked weapons as sidearms
+
+Tech Philosophy:
+• Neolithic pawns can use traditional melee weapons and shields (intuitive to use)
+• Medieval pawns can additionally use armor, crossbows, and early firearms
+• Industrial pawns can use modern firearms and advanced equipment
+
+Supported Mods:
+• Medieval Overhaul (160+ items)
+• VFE Classical, Medieval II, Tribals, Pirates
+• Combat Shields
+• Alpha Mechs
+• Simple Sidearms
+• These are Spacer Tech
+
+Note: This mod replaces Arcane Technology's Simple Sidearms patch to provide enhanced tech background integration.</description>
 	<modDependencies>
 		<li>
 			<packageId>aossi.techbackground</packageId>

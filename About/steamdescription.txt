@@ -1,28 +1,56 @@
 [h1]CTB-AT Equipment Expanded[/h1]
 
-[b]Enhanced compatibility bridge between Colonist Tech Background and Arcane Technology[/b]
+[b]Enhanced compatibility bridge between Colonist Tech Background and Arcane Technology with comprehensive mod support[/b]
 
 This mod ensures that pawns with different technological backgrounds can appropriately use equipment based on their knowledge level, creating a more immersive and balanced gameplay experience.
 
 [h1]Features[/h1]
 [list]
-[*] Allows tribal pawns to use medieval equipment without research
-[*] Enables industrial pawns to use modern weapons without researching them first
-[*] Full support for Medieval Overhaul (160+ items)
-[*] Simple Sidearms integration - replaces Arcane Technology's patch for enhanced tech background support
-[*] These are Spacer Tech compatibility - automatic tech level adjustments
-[*] Comprehensive equipment rules for vanilla and DLC items
+[*] Realistic tech level requirements - if a tribal can figure out how to use it, they can use it!
+[*] Comprehensive mod compatibility patches for popular equipment mods
+[*] Simple Sidearms integration - tech-appropriate pawns can use research-locked weapons as sidearms
 [*] Smart tech level matching based on pawn backgrounds
 [/list]
 
-[h1]How It Works[/h1]
-The mod bridges the gap between Colonist Tech Background (which gives pawns tech knowledge traits) and Arcane Technology (which locks equipment behind research). With this mod:
+[h1]Tech Level Philosophy[/h1]
+This mod uses a realistic approach to equipment restrictions:
 
+[b]Neolithic/Tribal pawns can use:[/b]
 [list]
-[*] [b]Tribal pawns[/b] can use simple medieval weapons and armor without research
-[*] [b]Medieval pawns[/b] can use all medieval equipment plus basic firearms with research
-[*] [b]Industrial pawns[/b] can use modern weapons without needing to research gunsmithing
-[*] [b]Spacer pawns[/b] have access to advanced technology without research requirements
+[*] Most traditional melee weapons (swords, axes, maces - intuitive to swing)
+[*] Traditional shields (wood, leather, basic metal - just hold them up to block)
+[*] Simple bows and throwing weapons
+[*] Molotov cocktails
+[/list]
+
+[b]Medieval pawns can additionally use:[/b]
+[list]
+[*] All traditional armor types (requires knowledge of straps and fitting)
+[*] Crossbows and mechanical weapons
+[*] Early gunpowder weapons (arquebus, hand cannons)
+[/list]
+
+[b]Industrial pawns can additionally use:[/b]
+[list]
+[*] Modern firearms (revolvers, rifles, automatic weapons)
+[*] Modern armor (flak vests, combat helmets)
+[*] Advanced explosives
+[/list]
+
+[h1]Supported Mods[/h1]
+[list]
+[*] [b]Core game[/b] - Full vanilla equipment support
+[*] [b]Royalty, Ideology, Biotech, Anomaly[/b] - All DLC equipment patches
+[*] [b]Medieval Overhaul[/b] - Complete medieval equipment integration (160+ items)
+[*] [b]Vanilla Factions Expanded series:[/b]
+  - VFE - Classical (Roman/Greek equipment)
+  - VFE - Medieval II (knights and crusaders)  
+  - VFE - Tribals (primitive weapons and armor)
+  - VFE - Pirates (warcaskets and advanced tech)
+[*] [b]Combat Shields[/b] - Traditional to spacer-tech shields
+[*] [b]Alpha Mechs[/b] - Mechanoid weapons and mechanitor gear
+[*] [b]Simple Sidearms[/b] - Tech-aware sidearm restrictions
+[*] [b]These are Spacer Tech[/b] - Adjusts spacer-level equipment
 [/list]
 
 [h1]Mod Compatibility[/h1]
@@ -32,12 +60,10 @@ The mod bridges the gap between Colonist Tech Background (which gives pawns tech
 [*] Arcane Technology
 [/list]
 
-[b]Enhanced Support:[/b]
+[b]Optional but Enhanced:[/b]
 [list]
-[*] Medieval Overhaul - Full equipment support
-[*] Simple Sidearms - Replaces Arcane Technology's patch to enable tech background-aware sidearm selection
-[*] These are Spacer Tech - Automatic compatibility with research tech level changes
-[*] All official DLCs (Royalty, Ideology, Biotech, Anomaly)
+[*] Any of the supported mods listed above
+[*] Doesn't modify equipment that isn't specifically patched, falls back to Arcane Technology/Tech Background mod behavior (patches included for major mods, more to be added over time)
 [/list]
 
 [h1]Load Order[/h1]
@@ -47,19 +73,25 @@ The mod bridges the gap between Colonist Tech Background (which gives pawns tech
 4. Colonist Tech Background
 5. These are Spacer Tech (if using)
 6. Medieval Overhaul (if using)
-7. Simple Sidearms (if using)  
-8. [b]CTB-AT Equipment Expanded[/b]
+7. Simple Sidearms (if using)
+8. Any VFE mods (if using)
+9. Combat Shields (if using)
+10. Alpha Mechs (if using)
+11. [b]CTB-AT Equipment Expanded[/b]
+
+[h1]Compatibility Notes[/h1]
+[list]
+[*] Replaces Arcane Technology's Simple Sidearms patch for better integration
+[*] Compatible with RimWorld 1.5 and 1.6
+[*] Save-game safe to add or remove
+[/list]
 
 [h1]Credits[/h1]
 [list]
 [*] Original mod by [b]Aos Si[/b]
 [*] Expanded and maintained by [b]azrazalea[/b]
-[*] Medieval Overhaul compatibility added
-[*] Simple Sidearms integration implemented
+[*] Thanks to the creators of Colonist Tech Background and Arcane Technology
 [/list]
-
-[h1]Technical Details[/h1]
-This mod uses Harmony patches to intercept equipment checks and apply custom tech level rules based on pawn backgrounds. It maintains compatibility with other mods by using a shared equipment checking system.
 
 [h1]Bug Reports & Suggestions[/h1]
 Please report any issues or suggestions in the comments section. When reporting bugs, please include:
